@@ -5,20 +5,17 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { ClientsComponent } from './pages/clients/clients.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 export const routes: Routes = [
   {
-    path:'',
-    component: LayoutComponent,
-    children:[{path: '',
-      component:HomepageComponent
-    },
-
+    path:'',component: LayoutComponent,
+    children:[{path: '',component:HomepageComponent},
     {path: 'aboutus', component:AboutusComponent},
     {path: 'clients', component:ClientsComponent},
     {path: 'contactus', component:ContactusComponent},
-    {path: 'services', component:ServicesComponent},
+    {path: 'services', component:ServicesComponent},]
+  },
 
-  ]
-  }
+  {path: 'signup', component:SignupComponent},
 ];

@@ -1,212 +1,53 @@
-/* # Departments Section */
---------------------------------------------------------------*/
-.departments {
-  overflow: hidden;
+.card {
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.departments .nav-tabs {
-  border: 0;
-}
-
-.departments .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: var(--default-color);
-  border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.departments .nav-link:hover {
-  color: var(--accent-color);
-}
-
-.departments .nav-link.active {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-color: var(--background-color);
-}
-
-.departments .tab-pane.active {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.departments .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.departments .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.departments .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .departments .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-
-  .departments .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-# Doctors Section
---------------------------------------------------------------*/
-.doctors .team-member {
-  background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 5px;
-  transition: 0.5s;
-  padding: 30px;
-  height: 100%;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member {
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-}
-
-.doctors .team-member .pic {
-  overflow: hidden;
-  width: 150px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.doctors .team-member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.doctors .team-member:hover {
+.card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.doctors .team-member .member-info {
-  padding-left: 30px;
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
 }
 
-@media (max-width: 468px) {
-  .doctors .team-member .member-info {
-    padding: 30px 0 0 0;
-    text-align: center;
-  }
+.section-title {
+  margin: 40px 0 20px;
+  text-align: center;
 }
 
-.doctors .team-member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
+.our-history {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 40px 0;
+
 }
 
-.doctors .team-member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
+.our-history .container {
+  background: transparent;
+  height: 200px;
 }
 
-.doctors .team-member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 85%);
-  bottom: 0;
-  left: 0;
+.team-member img {
+  border-radius: 50%;
+  width: 170px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-@media (max-width: 468px) {
-  .doctors .team-member span::after {
-    left: calc(50% - 25px);
-  }
+.social-icons a {
+  margin: 0 5px;
+  color: #333;
+  font-size: 1.2em;
+  transition: color 0.3s;
 }
 
-.doctors .team-member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.doctors .team-member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member .social {
-    justify-content: center;
-  }
-}
-
-.doctors .team-member .social a {
-  background: color-mix(in srgb, var(--default-color), transparent 94%);
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-}
-
-.doctors .team-member .social a i {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.doctors .team-member .social a:hover {
-  background: var(--accent-color);
-}
-
-.doctors .team-member .social a:hover i {
-  color: var(--contrast-color);
-}
-
-.doctors .team-member .social a+a {
-  margin-left: 8px;
+.social-icons a:hover {
+  color: #007bff;
 }

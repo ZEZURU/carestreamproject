@@ -1,0 +1,68 @@
+<!-- sign-up.component.html -->
+<div class="background-container">
+  <img ngSrc="hero4.jpg" height="100" width="100" class="background-image" alt="Background Image">
+  <div class="signup-card">
+    <h2 class="text-center">Sign Up</h2>
+    <form id="signupForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="fullName">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="surname">Surname</label>
+          <input type="text" class="form-control" id="surname" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="john.smith@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="contactNumber">Contact Number</label>
+        <div class="input-group">
+          <select class="custom-select" id="countryCode">
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
+            <option value="+33">+33</option>
+            <option value="+49">+49</option>
+            <!-- Add more country codes as needed -->
+          </select>
+          <input type="text" class="form-control" id="contactNumber" placeholder="123-456-7890" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="serviceDepartment">Service Department</label>
+          <select class="form-control" id="serviceDepartment">
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+            <option>Department 4</option>
+            <option>Department 5</option>
+            <option>Department 6</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="registrationStatus">Registered Status</label>
+          <select class="form-control" id="registrationStatus">
+            <option>Registered</option>
+            <option>Not Registered</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="serviceNeeded">Service You Need</label>
+        <select class="form-control" id="serviceNeeded">
+          <option>Service 1</option>
+          <option>Service 2</option>
+          <option>Service 3</option>
+          <option>Service 4</option>
+          <option>Service 5</option>
+          <option>Service 6</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+  </div>
+</div>
