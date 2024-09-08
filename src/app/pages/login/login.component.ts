@@ -4,12 +4,12 @@ import { HeaderComponent } from "../../shared/header/header.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 
 @Component({
-  selector: 'app-signup',
+  selector: 'app-login',
   standalone: true,
   imports: [NgOptimizedImage, HeaderComponent, FooterComponent],
-  templateUrl: './signup.component.html',
-  styleUrl: './signup.component.css'
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
-export class SignupComponent {
+export class LoginComponent {
 
 }

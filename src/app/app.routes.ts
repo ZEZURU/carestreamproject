@@ -6,6 +6,8 @@ import { ClientsComponent } from './pages/clients/clients.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SidenavComponent } from './shared/sidenav/sidenav.component';
 
 export const routes: Routes = [
   {
@@ -18,4 +20,10 @@ export const routes: Routes = [
   },
 
   {path: 'signup', component:SignupComponent},
+  {path: 'login', component:LoginComponent},
+
+
+  // {path:'',component:SidenavComponent,
+  //   children:[{path:'',component:}]
+  // }
 ];
